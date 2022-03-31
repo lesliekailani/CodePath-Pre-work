@@ -1,0 +1,91 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2rem;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+.hidden {
+  display: none;
+}
+#button1 {
+  background:lightgreen; 
+}
+#button1:active, #button1.lit {
+  background:green;
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/greenmountains.jpg?v=1648687366516');
+}
+
+#button2 {
+  background:lightblue;
+}
+#button2:active, #button2.lit {
+  background:blue;
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/clearskies.jpg?v=1648687372273');
+}
+
+#button3 {
+  background:pink; 
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/pinkflowers.jpg?v=1648687379271');
+}
+#button3:active, #button3.lit {
+  background:pink;
+}
+
+#button4 {
+  background:lightyellow;
+}
+#button4:active, #button4.lit {
+  background:yellow;
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/yellowducks.jpg?v=1648687383840');
+}
+
+#button5 {
+  background:brown;
+}
+#button5:active, #button5.lit {
+  background:orange;
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/brown.jpg?v=1648687388431');
+}
+
+#button6 {
+  background:purple;
+}
+#button6:active, #button6.lit {
+  background:purple;
+  background-image: url('https://cdn.glitch.global/3306a2fc-a3ce-442f-90d1-5b940e3fc796/purplelavender.jpg?v=1648692508086');
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
